@@ -27,6 +27,15 @@
                             <input type="Nama" name="Nama" class="form-control" id="Nama" aria-describedby="Nama">
                         </div>
                         <div class="form-group">
+                            <label for="Email">E-mail</label>
+                            <input type="Email" name="Email" class="form-control" id="Email" aria-describedby="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="TanggalLahir">Tanggal Lahir</label>
+                            <input type="TanggalLahir" name="TanggalLahir" class="form-control" id="TanggalLahir"
+                                aria-describedby="TanggalLahir">
+                        </div>
+                        <div class="form-group">
                             <label for="Kelas">Kelas</label>
                             <input type="Kelas" name="Kelas" class="form-control" id="Kelas" aria-describedby="password">
                         </div>
