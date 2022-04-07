@@ -37,14 +37,14 @@
             <th>No_Handphone</th>
             <th width="280px">Action</th>
         </tr>
-        @foreach ($mahasiswas as $Mahasiswa)
+        @foreach ($posts as $Mahasiswa)
             <tr>
 
                 <td>{{ $Mahasiswa->Nim }}</td>
                 <td>{{ $Mahasiswa->Nama }}</td>
                 <td>{{ $Mahasiswa->Email }}</td>
                 <td>{{ $Mahasiswa->TanggalLahir }}</td>
-                <td>{{ $Mahasiswa->Kelas }}</td>
+                <td>{{ $Mahasiswa->kelas->nama_kelas }}</td>
                 <td>{{ $Mahasiswa->Jurusan }}</td>
                 <td>{{ $Mahasiswa->No_Handphone }}</td>
                 <td>
@@ -63,6 +63,6 @@
         @endforeach
     </table>
     <div class="d-flex justify-content-lg-center">
-        {{ $mahasiswas->links() }}
+        {{ $posts->links() }}
     </div>
 @endsection

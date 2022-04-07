@@ -4,12 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Kelas;
+
 
 class Mahasiswa extends Model
 {
     use HasFactory;
 
-    protected $table = "mahasiswas"; // Eloquent akan membuat model mahasiswa menyimpan record di tabel mahasiswas
+    protected $table = 'mahasiswas'; // Eloquent akan membuat model mahasiswa menyimpan record di tabel mahasiswas
     public $timestamps = false;
     protected $primaryKey = 'Nim'; // Memanggil isi DB Dengan primarykey
 
@@ -18,8 +20,13 @@ class Mahasiswa extends Model
         'Nama',
         'Email',
         'TanggalLahir',
-        'Kelas',
+        'kelas_id',
         'Jurusan',
         'No_Handphone',
     ];
+
+    public function kelas()
+    {
+        return $this->belongsTo(Kelas::class, 'kelas_id');
+    }
 }
