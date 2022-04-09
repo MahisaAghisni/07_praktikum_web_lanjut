@@ -24,3 +24,4 @@ Auth::routes();
 
 Route::resource('/mahasiswa', MahasiswaController::class);
 Route::get('/search', [MahasiswaController::class, 'search'])->name('search');
+Route::get('/mahasiswa/nilai/{mahasiswa}', [MahasiswaController::class, 'khs'])->name('nilai');
