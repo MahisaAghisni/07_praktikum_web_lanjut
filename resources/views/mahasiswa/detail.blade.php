@@ -8,6 +8,8 @@
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item"><b>Nim: </b>{{ $Mahasiswa->Nim }}</li>
                         <li class="list-group-item"><b>Nama: </b>{{ $Mahasiswa->Nama }}</li>
+                        <li class="list-group-item"><b>Foto: </b><img width="150px"
+                                src="{{ asset('storage/' . $Mahasiswa->Foto) }}"></li>
                         <li class="list-group-item"><b>E-Mail: </b>{{ $Mahasiswa->Email }}</li>
                         <li class="list-group-item"><b>TanggalLahir: </b>{{ $Mahasiswa->TanggalLahir }}</li>
                         <li class="list-group-item"><b>Kelas: </b>{{ $Mahasiswa->kelas->nama_kelas }}</li>
