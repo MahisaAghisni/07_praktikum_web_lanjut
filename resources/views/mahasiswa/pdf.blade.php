@@ -21,7 +21,7 @@
     <b>NIM: </b>{{ $mahasiswas->Nim }}<br>
     <b>Kelas: </b> {{ $mahasiswas->kelas->nama_kelas }}<br>
 
-    <br><br><br>
+    <br>
 
     <table class="table table-bordered">
         <tr>
