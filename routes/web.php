@@ -25,3 +25,4 @@ Auth::routes();
 Route::resource('/mahasiswa', MahasiswaController::class);
 Route::get('/search', [MahasiswaController::class, 'search'])->name('search');
 Route::get('/mahasiswa/nilai/{mahasiswa}', [MahasiswaController::class, 'khs'])->name('nilai');
+Route::get('/mahasiswa/cetakpdf/{mahasiswa}', [MahasiswaController::class, 'cetak_pdf'])->name('pdf');
